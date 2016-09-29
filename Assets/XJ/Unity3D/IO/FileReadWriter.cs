@@ -56,7 +56,7 @@ namespace XJ.Unity3D.IO
         /// <param name="obj">
         /// Json を読み込み、その値を上書きするインスタンス。
         /// </param>
-        public static void ReadJsonFromStramingAssets<T>(T obj)
+        public static void ReadJsonFromStreamingAssets<T>(T obj)
         {
             JsonUtility.FromJsonOverwrite(ReadFileFromStreamingAssets(typeof(T).Name + ".json"), obj);
         }
